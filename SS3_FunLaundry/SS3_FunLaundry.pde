@@ -87,16 +87,20 @@ line(0, y, 1290, y);
  
 }
 
-  }
+}
 }
 
+void mouseClicked() {
+
+background(207, 185, 151);
+}
+
+
 void mousePressed() {
-  if (mouseX < width/3) {
-background(545);
-} else if (mouseX < 2*width/3) {
-background(127);
-} else {
-background(0);
+  if (value == 0) {
+    value = 255;
+  } else  {
+    value = 0;
  
 }
 }
