@@ -2,14 +2,12 @@
 //click to change background color & fill color
 //In this theme i'm exploring the diffrent ways that laundry machines can be fun and interactive for users.
 
+
 int value = 0;
 float r;
 float g;
 float b;
 float a;
-float diam;
-float x;
-float y;
 
 
 void setup()
@@ -34,17 +32,17 @@ void draw()
   circle(395, 400, 360);
   
   
-  fill(value);
+  fill(0);
   strokeWeight(5);
   rect(192,80 ,130, 60);
   
-  fill(value);
+  fill(0);
   circle(470,110 ,80);
   
-  fill(value);
+  fill(0);
   circle(560,110 ,80);
   
-  fill(value);
+  fill(0);
   rect(192,620 ,400, 30);
   
   fill(255);
@@ -62,25 +60,21 @@ void draw()
   r = random(255);
   g = random(255);
   b = random(255);
-  a = random(255);
-  diam = random(20);
-  frameRate(5);
-
-
-
+  a = random(255);///// if you have eye sensitvity remove this rgba function and click play
   fill(r, g, b, a);
   circle(395, 400, 320);
   
- 
+  
+   
 }
-void mouseClicked() {
 
-background(207, 185, 151);
-}
 void mousePressed() {
-  if (value == 0) {
-    value = 255;
-  } else {
-    value = 0;
-  }
+  if (mouseX < width/3) { /////mouse click on left hand side turns white
+    background(985);
+  }   else if (mouseX < 2*width/3) { ///////mouse click on middle turns grey
+      background(127);
+  }   else {
+      background(0); /////mouse click on right hand side turns black
 }
+}
+ 
