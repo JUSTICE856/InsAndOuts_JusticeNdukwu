@@ -4,6 +4,9 @@
 
 
 int value = 0;
+int num = 50;
+int[] x = new int[num];
+int[] y = new int[num];
 
 PImage img;
 
@@ -96,6 +99,17 @@ void draw()
   fill(255,140,0);
   text("Justice Ndukwu", 830, 370, -790);
   
+  for (int i = num-1; i > 0; i--) {
+    x[i] = x[i-1];
+    y[i] = y[i-1];
+  }
+  // Add the new values to the beginning of the array
+  x[0] = mouseX;
+  y[0] = mouseY;
+  // Draw the circles
+  for (int i = 0; i < num; i++) {
+    rect(x[i], y[i], i/7.0, i/1.0,4.9); //// move your mouse around and you will see long skinny rectangles. credit: proccesing refrence
+  }
   
    
 }
