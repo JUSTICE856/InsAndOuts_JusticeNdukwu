@@ -10,7 +10,7 @@ int[] y = new int[num];
 
 PImage img;
 
-int[] star;
+int[] dog;
 String[] words;
 
 void setup()
@@ -18,10 +18,10 @@ void setup()
   size(1080, 720);
   background(255);
   
-  star = new int[3];
-  star[0] = 28;
-  star[1] = 12;
-  star[2] = 5;
+  dog = new int[3];
+  dog[0] = 28;
+  dog[1] = 12;
+  dog[2] = 5;
   
   words = new String[5];
   
