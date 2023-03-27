@@ -45,7 +45,7 @@ int xdirection = 1;
 int ydirection = 1;
 int rad = 60; 
 int[] dog;
-float r1; ///random function that places items in diffrent places every time you reload the game
+float r1; /////random function that places items in diffrent places every time you reload the game
 float r2; 
 float y = 0;
 int value = 0;
@@ -77,8 +77,8 @@ boolean hasPopped=false;
 
 
 void setup() {
-  size(1940, 1010);
-  fullScreen();
+  size(1940, 1090);
+  
 
   place=0;
   fill(0,255,0);
