@@ -37,25 +37,25 @@ void loop()
   digitalWrite(LED1, LOW);
   delay(4000);
   digitalWrite(LED2, LOW);
-  delay(300);
+  delay(200);
   digitalWrite(LED2, LOW);
-  delay(400);
+  delay(50);
   digitalWrite(LED3, LOW);
   delay(300);
   digitalWrite(LED3, LOW);
-  delay(400);
+  delay(4000);
   digitalWrite(LED4, LOW);
   delay(300);
   digitalWrite(LED4, LOW);
-  delay(400);
+  delay(40);
   digitalWrite(LED5, LOW);
   delay(100);
   digitalWrite(LED5, LOW);
-  delay(400);
+  delay(7000);
   analogWrite(LED6, LOW);
-  delay(300);
+  delay(100);
   analogWrite(LED6, LOW);
-  delay(4000);
+  delay(1000);
   }
   else
   {
