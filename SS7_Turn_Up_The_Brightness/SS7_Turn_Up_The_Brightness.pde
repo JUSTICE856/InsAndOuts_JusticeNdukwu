@@ -5,7 +5,7 @@ Reads values from serial port, written to the port by Arduino.
  */
 
 
-// Kyle Holston, justice, Samuel C
+// Kyle Holston, Justice Ndukwu, Samuel C
 // Turn up the brightness Sketch
 //base code taken from the professors demo
 //
